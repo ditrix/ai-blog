@@ -57,10 +57,10 @@ const confirmDelete = (postId: number, e: Event) => {
             </div>
 
             <div
-                class="overflow-hidden rounded-lg bg-white shadow dark:bg-gray-800"
+                class="overflow-x-auto rounded-lg bg-white shadow dark:bg-gray-800"
             >
                 <table
-                    class="min-w-full divide-y divide-gray-200 dark:divide-gray-700"
+                    class="w-full divide-y divide-gray-200 dark:divide-gray-700"
                 >
                     <thead class="bg-gray-50 dark:bg-gray-900">
                         <tr>
@@ -68,11 +68,6 @@ const confirmDelete = (postId: number, e: Event) => {
                                 class="px-6 py-3 text-left text-xs font-medium tracking-wider text-gray-500 uppercase dark:text-gray-400"
                             >
                                 Заголовок
-                            </th>
-                            <th
-                                class="px-6 py-3 text-left text-xs font-medium tracking-wider text-gray-500 uppercase dark:text-gray-400"
-                            >
-                                Slug
                             </th>
                             <th
                                 class="px-6 py-3 text-left text-xs font-medium tracking-wider text-gray-500 uppercase dark:text-gray-400"
@@ -105,13 +100,6 @@ const confirmDelete = (postId: number, e: Event) => {
                                     class="text-sm font-medium text-gray-900 dark:text-gray-100"
                                 >
                                     {{ post.title }}
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div
-                                    class="text-sm text-gray-500 dark:text-gray-400"
-                                >
-                                    {{ post.slug }}
                                 </div>
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap">
